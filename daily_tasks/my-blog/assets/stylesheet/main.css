@@ -1,0 +1,344 @@
+/*----    RESET    ----CSS*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom css */
+
+/* css variables */
+:root {
+    --primaryColor: #444444;
+    --secondryColor: #ffffff;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+/* custom css reset */
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    background-color: #dadada;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.padding {
+  padding: 1.4rem 1.6rem;
+}
+
+  /* Heading elements */
+  h1 {
+    font-size: 3.6rem;
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 2.2rem;
+    letter-spacing: -0.08rem;
+    line-height: 1.35;
+  }
+  h4 {
+    font-size: 1.8rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.5;
+  }
+  h5 {
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    line-height: 1.4;
+  }
+  h6 {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+
+ /* Paragraph Elements */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ---- General css ---- */
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* uppercase */
+.uppercase {
+    text-transform: uppercase;
+}
+/* text align center */
+.text-center {
+    text-align: center;
+}
+strong {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* Hero section */
+.main-header {
+    background-color: rgb(255, 174, 109);
+    /* background-color: rgba(71, 46, 104, 0.9); */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo-link {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.8rem 0;
+}
+.nav-link {
+    border: 1px solid rgb(189, 182, 197);
+    padding: 0.8rem 1.8rem;
+}
+
+
+/* ----- Hero ----- */
+.hero-section {
+    background-image: url('../media/banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero-container {
+    padding: 18rem 0;
+}
+.main-heading {
+    font-size: 2.8rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+.btn {
+    color: #fff;
+    font-size: 1.4rem;
+}
+.btn-first {
+    background-color: #00a6d9;
+    border: 1px solid transparent;
+    padding: 0.8rem 2rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* ---- Blog ---- */
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 550px;
+    padding: 4rem;
+    background-color: #fff;
+    margin: 10rem 2rem 0 2rem;
+}
+.post-heading {
+    color: #637485;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.post-text {
+    color: #637485;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.btn-post {
+    color: #637485;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem 1.8rem;
+    border: 1px solid #b5b7b9;
+    border-radius: 0.2rem;
+    margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+    background: transparent;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    /* padding: 4rem 1rem; */
+    margin: 10rem 5.4rem 5rem 5.4rem;
+}
+.icon {
+    font-size: 20px;
+    margin-right: 2rem;
+    color: rgb(214, 214, 214);
+}
+.info-list {
+    padding: 2rem 4rem;
+}
+.info-list-item {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 3.5rem 0;
+}
+.strong-info {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00a6d9;
+    text-transform: uppercase;
+    /* margin-right: 2rem; */
+}
+.info-span {
+    display: block;
+    margin: 0.5rem 0 0 4rem;
+}
+
+/* ----   Form   ---- */
+
+.form {
+    background-color: #00a6d9;
+    padding: 2rem 2rem;
+    width: 58.356rem;
+}
+.input {
+    padding: 1rem 8rem 1rem 0.5rem;
+    margin: 0 0.7rem;
+    /* padding-right: 2rem; */
+    background-color: #057a9e;
+    border: 1px solid transparent;
+    margin-bottom: 2rem;
+    /* margin-left: 4rem; */
+}
+.input-2 {
+    /* width: 20%; */
+    background-color: #057a9e;
+    padding: 1rem 0;
+    border: 1px solid transparent;
+    padding: 0.5rem 24rem 0 0.5rem;
+}
+::placeholder {
+    color: rgb(212, 223, 228);
+}
+.copyright {
+    text-align: center;
+}
+.form-heading {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right:400px;
+    margin-bottom: 20px;
+}
+.btn-form {
+    display: inline-block;
+    background-color: #057a9e;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+
+/* Media queries */
+@media all and (max-width: 992px) {
+    html {
+      font-size: 12px;
+    }
+}
+  
+@media all and (max-width: 768px) {
+    html {
+      font-size: 10px;
+    }
+}
